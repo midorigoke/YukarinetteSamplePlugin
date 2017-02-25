@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="YukarinetteSamplePlugin.OptionWindow" UseLayoutRounding="True" SnapsToDevicePixels="True" FontFamily="Meiryo" Title="SamplePlugin" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <StackPanel>
+    <GroupBox Header="SamplePlugin" Margin="10,5,10,10">
+      <StackPanel>
+        <TextBlock Margin="5,5,5,0">SampleSetting</TextBlock>
+        <StackPanel Orientation="Horizontal">
+          <TextBox Name="sampleSettingTextBox" Width="400" Margin="10" />
+        </StackPanel>
+      </StackPanel>
+    </GroupBox>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+      <StackPanel.Resources>
+        <Style x:Key="{x:Type Button}" TargetType="{x:Type Button}">
+          <Setter Property="FrameworkElement.Width" Value="100" />
+          <Setter Property="FrameworkElement.Height" Value="40" />
+          <Setter Property="FrameworkElement.Margin" Value="0,0,10,10" />
+        </Style>
+      </StackPanel.Resources>
+      <Button IsDefault="True" Click="okButton_Click">OK</Button>
+      <Button IsCancel="True">キャンセル</Button>
+    </StackPanel>
+  </StackPanel>
+</Window>
