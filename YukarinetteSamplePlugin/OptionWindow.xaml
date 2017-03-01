@@ -3,6 +3,7 @@
   <StackPanel>
     <GroupBox Header="SamplePlugin" Margin="10,5,10,10">
       <StackPanel>
+		<!-- 設定欄 -->
         <TextBlock Margin="5,5,5,0">SampleSetting</TextBlock>
         <StackPanel Orientation="Horizontal">
           <TextBox Name="sampleSettingTextBox" Width="400" Margin="10" />

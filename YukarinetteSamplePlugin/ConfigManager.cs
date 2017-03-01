@@ -30,6 +30,7 @@ namespace YukarinetteSamplePlugin
 			settingPath = Path.Combine(path, fileName + ".config");
 		}
 
+		// 設定ファイル読み込み
 		public void Load(string pluginName)
 		{
 			if (!File.Exists(settingPath))
@@ -59,6 +60,7 @@ namespace YukarinetteSamplePlugin
 			}			
 		}
 
+		// 設定ファイル保存
 		public void Save(string pluginName)
 		{
 			if (Data == null)
